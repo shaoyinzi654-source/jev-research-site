@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 230 113" role="img" aria-labelledby="title desc">
-<title id="title">279 条 Pb 开发记录的真实容量与距离排名</title>
-<desc id="desc">横坐标为对实验状态的全局距离排名，纵坐标为实测 Qe 的对数。橙色带为 8 至 16 毫克每克范围，共 77 条记录。青色描边标出全局最近邻，紫色描边标出所选范围内最近邻。</desc>
+<title id="title">Measured capacities and distance ranks of 279 Pb reference records</title>
+<desc id="desc">The horizontal axis shows global distance rank; the vertical axis shows log measured Qe. The orange band contains 77 records at 8–16 mg/g. Teal and purple outlines identify global and local neighbours.</desc>
 <rect x="0" y="0" width="230" height="113" fill="#fff"/>
-<text x="0" y="11" font-family="Arial,sans-serif" font-size="10" font-weight="700" fill="#526875">Pb 开发库 · 全局距离 × 实测容量</text>
+<text x="0" y="11" font-family="Arial,sans-serif" font-size="10" font-weight="700" fill="#526875">Pb references · distance rank × measured capacity</text>
 <rect x="35.0" y="46.189" width="183.0" height="7.562" fill="#ed851f" opacity=".18"/>
 <path d="M35.0 76.438H218.0" stroke="#d8e0e2" stroke-width=".55"/>
 <text x="31.0" y="78.438" text-anchor="end" font-family="Arial,sans-serif" font-size="8" fill="#6c7c84">1</text>
@@ -293,7 +293,7 @@
 <circle cx="217.34" cy="58.88" r="0.82" fill="#8597a0" fill-opacity=".8"/>
 <circle cx="218.00" cy="44.11" r="0.82" fill="#8597a0" fill-opacity=".8"/>
 <text transform="translate(10 56) rotate(-90)" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" fill="#71818a">Qₑ (mg/g · log₁₀)</text>
-<text x="35.0" y="99" font-family="Arial,sans-serif" font-size="8" fill="#71818a">排名 1</text>
+<text x="35.0" y="99" font-family="Arial,sans-serif" font-size="8" fill="#71818a">Rank 1</text>
 <text x="218.0" y="99" text-anchor="end" font-family="Arial,sans-serif" font-size="8" fill="#71818a">279</text>
-<text x="126" y="109" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" fill="#71818a">全局距离排名</text>
+<text x="126" y="109" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" fill="#71818a">Global distance rank</text>
 </svg>
