@@ -1,0 +1,5 @@
+backups/
+previews/
+__pycache__/
+*.log
+.openai/
