@@ -9,10 +9,3 @@
 /* Keep anchored chapters flush with the fixed navigation. */
 #about{scroll-margin-top:-86px}.site-header{background:#fff}.site-header.dark{background:#080808}.hero-wash{background:linear-gradient(90deg,#ffffffd9,transparent 85%),linear-gradient(0deg,#ffffffcf,transparent 30%)}
 @media(max-width:900px){#about{scroll-margin-top:-86px}}
-
-/* Refined carbon-layer hero */
-.hero canvas{left:34%;width:72%;height:100%;inset-block:0;right:auto}
-.hero-wash{background:linear-gradient(90deg,#ffffff 0%,#ffffffee 23%,#ffffff42 54%,transparent 75%),linear-gradient(0deg,#ffffffbd,transparent 28%)}
-.hero h1{font-size:clamp(48px,6.2vw,108px)}
-.hero-tagline{letter-spacing:.4px;font-size:14px}
-@media(max-width:650px){.hero canvas{left:15%;width:110%;height:80%;top:8%}.hero-wash{background:linear-gradient(0deg,#ffffffed 8%,#ffffff75 48%,transparent 85%)}.hero h1{font-size:9.5vw}.hero-tagline{font-size:12px}}
