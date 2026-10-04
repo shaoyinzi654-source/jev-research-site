@@ -12,15 +12,16 @@ all('#navigation-dialog nav a').forEach(a=>a.addEventListener('click',()=>closeD
 
 const titles=['Experimental evidence & choice','Range-guided retrieval & fusion','Continuous estimates & benchmarks','Probability & confidence','Validation & context adaptation'];
 const descriptions=['Experimental descriptors, capacity distributions and a fixed JEV decision.','A traceable path from range selection to local and global evidence.','Measured neighbours, 12 selected models and matched evaluation errors.','Record-linked probability diagnosis and confidence-based selection.','Component analysis and adaptation through labelled organic context.'];
+const FIGURE_VERSION='20261004d';
 let figureIndex=1,figureView='full';
 function renderFigure(){
   $('.figure-full').classList.remove('zoomed');$('#figure-zoom').textContent='ZOOM IN +';$('#figure-zoom').setAttribute('aria-pressed','false');
   const base=`assets/research/20261004/Figure${figureIndex}${figureView==='full'?'_complete':'a_mechanism'}`;
   $('#figure-label').textContent=`JEV RESEARCH / FIGURE ${String(figureIndex).padStart(2,'0')}${figureView==='mechanism'?'a':''}`;
   $('#figure-title').textContent=titles[figureIndex-1];$('#figure-description').textContent=descriptions[figureIndex-1];
-  const image=$('#figure-image');image.src=base+'.svg';image.alt=`Figure ${figureIndex}${figureView==='mechanism'?'a mechanism panel':', complete figure'}: ${titles[figureIndex-1]}`;
+  const image=$('#figure-image');image.src=base+'.svg?v='+FIGURE_VERSION;image.alt=`Figure ${figureIndex}${figureView==='mechanism'?'a mechanism panel':', complete figure'}: ${titles[figureIndex-1]}`;
   $('.figure-full').classList.toggle('mechanism',figureView==='mechanism');
-  for(const ext of ['pdf','svg','png'])$('#figure-'+ext).href=base+'.'+ext;
+  for(const ext of ['pdf','svg','png'])$('#figure-'+ext).href=base+'.'+ext+'?v='+FIGURE_VERSION;
   all('[data-view]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.view===figureView)));
 }
 all('[data-figure]').forEach(button=>button.addEventListener('click',()=>{

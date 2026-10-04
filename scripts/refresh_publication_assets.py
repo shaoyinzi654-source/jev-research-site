@@ -31,7 +31,7 @@ for i,(title,description) in enumerate(titles,1):
 with zipfile.ZipFile(OUT/'JEV_Figures_20261004.zip','w',zipfile.ZIP_DEFLATED) as archive:
     for file in OUT.iterdir():
         if file.suffix in ['pdf','.pdf','.svg','.png']:archive.write(file,file.name)
-    archive.writestr('README.txt','JEV RESEARCH | Figures updated 4 October 2026\nFive complete figures and five separate mechanism panels (a).\nNative PDF/SVG and 600 dpi PNG.\nFigure 2a connectors, Figure 3a Local argmin overlap and Figure 4a confidence branch origins are corrected.\nQuantitative data are unchanged.\n')
+    archive.writestr('README.txt','JEV RESEARCH | Figures updated 4 October 2026\nFive complete figures and five separate mechanism panels (a).\nNative PDF/SVG and 600 dpi PNG.\nFigure 2a connectors, Figure 3a Local argmin overlap and Figure 4a confidence branch origins are corrected.\nFigure 4e/f record ticks are below the confidence strips and centred on their columns: Pb 1-70, Cd 1-41.\nQuantitative data are unchanged.\n')
 
 sys.path.insert(0,str(PROJECT/'scripts'))
 import publication_figures_v12_1 as F
