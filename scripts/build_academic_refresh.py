@@ -7,6 +7,7 @@ prefix=source[:source.index('function openDialog')]
 prefix=prefix.replace('assets/jev-workflow.svg','assets/research/20261004/Figure1a_mechanism.svg')
 js.write_text(prefix+(ROOT/'scripts/academic_interactions.js').read_text(encoding='utf-8'),encoding='utf-8')
 html=(ROOT/'scripts/academic_home.html').read_text(encoding='utf-8')
+html=html.replace('<img src="assets/research/20261004/Figure2a_mechanism_preview.webp"','<img width="1380" height="1300" src="assets/research/20261004/Figure2a_mechanism_preview.webp"')
 html=html.replace('<div class="figure-full">','<div class="figure-view-tools"><span>SCIENTIFIC FIGURE / VECTOR VIEW</span><button id="figure-zoom" aria-pressed="false">ZOOM IN +</button></div><div class="figure-full">')
 (ROOT/'dist/index.html').write_text(html,encoding='utf-8')
 print('Academic website refreshed.')
